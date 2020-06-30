@@ -212,4 +212,6 @@ The ~/src/styles directory can be used for compiling bootstrap and storing other
    ## add a project to Github using VS Code
    1) view-> command palette 
    2)git init
-   3) 
+   3) git add remote
+   ## crete module with routing
+   ng g module modules/auth --routing 

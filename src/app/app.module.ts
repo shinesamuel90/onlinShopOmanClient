@@ -13,11 +13,14 @@ import { MatSlideToggleModule
 } from '@angular/material/slide-toggle';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
+import { AuthModule } from './modules/auth/auth.module';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AuthLayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,9 @@ import { FooterComponent } from './layout/footer/footer.component';
     MatSliderModule,
     MatToolbarModule,
     MatIconModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    AuthModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
